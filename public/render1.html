@@ -1,0 +1,32 @@
+<script>
+    var myHeaders = new Headers();
+myHeaders.append("Content-Type", "application/json");
+
+var raw = JSON.stringify({
+  "username": "project"
+});
+
+var requestOptions = {
+  method: 'POST',
+  headers: myHeaders,
+  body: raw,
+  redirect: 'follow'
+};
+
+fetch("http://localhost:3000/api?username=project", requestOptions)
+  .then(response => response.text())
+  .then(result => {
+      result=JSON.parse(result)
+      if (result.score>8){
+        window.location = './happy.html';
+      }
+      else if (result.score<8 && result.score>6){
+        window.location = './moderate.html';
+      }
+      
+      else{
+          window.location='./depressed.html';
+      }
+  })
+  .catch(error => console.log('error', error));
+</script>
