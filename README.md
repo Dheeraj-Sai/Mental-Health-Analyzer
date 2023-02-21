@@ -1,4 +1,4 @@
-
+# Mental Health Analyzer
 
 Mental health is very important at every stage of our lives, from childhood and adolescence through adulthood. mental state includes our emotional, psychological, and social well-being. It affects how we expect, feel, and act. It also helps determine how we handle stress, relate to others, and make healthy choices. mental state is very important at every stage of life, from childhood and adolescence through adulthood.
 
